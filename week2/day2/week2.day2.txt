@@ -1,0 +1,117 @@
+Absolute xPath:
+	- It starts with '/'
+	- You should start traversing from the root tag
+	- mandatory -- /tagName
+	- It's not preferred
+	
+/html/body/div[2]/div[2]/div/form/p/input
+
+
+Relative xPath:
+	- It starts with '//'
+	- mandatory -- //tagName
+	
+//input
+
+Basic xPaths (5):
+1. Attribute based xPath
+
+//tagName[@attributeName='attributeValue']
+//tagName[@attributeName1='attributeValue1'][@attributeName2='attributeValue2']
+//tagName[@attributeName1='attributeValue1'][text()='textValue']
+
+Ex: //input[@type='password']
+//input[@type='password'][@id='password']
+//input[@type='password' and @id='password']
+
+2. Text based xPath:
+
+//tagName[text()='textValue']
+
+Ex: //label[text()='Password']
+	//a[text()='CRM/SFA']
+
+3. Partial Attribute based xPath:
+
+//tagName[contains(@attributeName, 'partialAttributeValue')]
+
+Ex: //input[contains(@id, 'pass')]
+
+4. Partial Text based xPath:
+
+//tagName[contains(text(),'partialTextValue')]
+
+Ex: //label[contains(text(), 'Pass')]
+
+5. Index based xPath:
+
+(//tagName[@attributeName='attributeValue'])[index]
+
+(//input[@class='inputLogin'])[2]
+
+
+Advanced xPaths (8):
+1. Parent to child:
+
+basicXPathForParent/childTagName
+
+Ex: //p[@class='top']/input
+
+2. Child to Parent:
+
+basicXPathForChild/parent::parentTagName
+
+Ex: //p[@class='top']/parent::form
+
+3. GrandParent to GrandChild:
+
+basicXPathForGrandParent//grandChildTagName
+
+Ex: //form[@id='login']//label[text()='Username']
+
+4. GrandChild to GrandParent:
+
+basicXPathForGrandChild/ancestor::grandParentTagName
+
+Ex: //label[text()='Username']/ancestor::form
+
+5. ElderSibling to YoungerSibling:
+
+basicXPathForElderSibling/following-sibling::youngerSiblingTgName
+
+Ex: //label[text()='Username']/following-sibling::input
+
+6. YoungerSibling to ElderSibling:
+
+basicXPathForYoungerSibling/preceding-sibling::elderSiblingTagName
+
+Ex: //input[@id='username']/preceding-sibling::label
+
+7. ElderCousin to YoungerCousin:
+
+basicXPathForElderCousin/following::youngerCousinTagName
+
+Ex: //label[text()='Username']/following::input[@type='password']
+
+8. YoungerCousin to ElderCousin:
+
+basicXPathForYoungerCousin/preceding::elderCousinTagName
+
+Ex: //label[text()='Password']/preceding::label
+
+https://login.salesforce.com
+username: hari.radhakrishnan@qeagle.com
+password: Testleaf$321
+
+
+//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a
+
+
+//label[text()='Flying Machine']/div
+//input[@value='Flying Machine']/following-sibling::div
+
+String brandName = "Flying Machine"
+
+"//label[text()='" + brandName + "']/div"
+
+//span[text()='Subject']/parent::label/following-sibling::input
