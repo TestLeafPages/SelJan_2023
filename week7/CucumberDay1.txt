@@ -1,0 +1,52 @@
+TDD - Test Driven Development
+
+	- Write the testcases first
+	- Get the approval for the testcases
+	- Development should be based on the testcases
+
+Cons:
+	- Lot of negative testcases covered rather than positive testcases
+	
+ATDD - Acceptance Test Driven Development
+	- Write the acceptance testcases first
+	- Development should be based on these testcases
+	
+Cons:
+	- Communication gap between technical and non-technical team
+
+
+BDD - Behavioural Driven Development
+	- to address the communcation gap between technical and non-technical team
+
+	- Write the acceptance testcases first
+		- common language (Gherkin - understandable by both tech and non-technical teams)
+
+
+Gherkin Keywords:
+
+	Feature			- Describe the functionality of application
+	Scenario		- Describe a behaviour/ testcase
+	Given			- Represent a pre condition
+	When			- Represent a test condition/ step
+	Then			- Represent expected result (for positive scenario)
+	But				- Represent expected result (for negative scenario)
+	And				- To link any two statements
+	Background		- to perform preconditions across the scenarios in
+						the same feature file
+	
+	
+Given Open the Browser
+And Load the URL
+Enter the username
+Enter the password
+Click on Login
+Verify if home page is present
+
+
+	
+
+Cucumber (3 Layers):
+
+Features 		- File to write the BDD testcases
+Step Definitions- Implement the test step using Java/ Selenium
+Runner			- TestNG for execution
