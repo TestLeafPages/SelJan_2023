@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="16628" started-at="2023-03-04T18:12:58 IST" finished-at="2023-03-04T18:13:15 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="16628" started-at="2023-03-04T18:12:58 IST" finished-at="2023-03-04T18:13:15 IST">
+      <class name="com.leaftaps.testcases.TC001_CreateLead">
+        <test-method status="PASS" signature="setData()[pri:0, instance:com.leaftaps.testcases.TC001_CreateLead@5fcd892a]" name="setData" is-config="true" duration-ms="10" started-at="2023-03-04T18:12:58 IST" finished-at="2023-03-04T18:12:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.leaftaps.testcases.TC001_CreateLead@5fcd892a]" name="preCondition" is-config="true" duration-ms="5860" started-at="2023-03-04T18:12:59 IST" finished-at="2023-03-04T18:13:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="runCreateLead(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.leaftaps.testcases.TC001_CreateLead@5fcd892a]" name="runCreateLead" duration-ms="9670" started-at="2023-03-04T18:13:05 IST" data-provider="FetchData" finished-at="2023-03-04T18:13:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DemoSalesManager]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TestLeaf]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Haja]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[J]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCreateLead -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.leaftaps.testcases.TC001_CreateLead@5fcd892a]" name="postCondition" is-config="true" duration-ms="217" started-at="2023-03-04T18:13:14 IST" finished-at="2023-03-04T18:13:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.leaftaps.testcases.TC001_CreateLead -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

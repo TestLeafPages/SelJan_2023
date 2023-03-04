@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" verbose="5">
+  <test thread-count="5" name="Test" parallel="classes">
+    <classes>
+      <class name="com.leaftaps.testcases.TC001_EditLead"/>
+      <class name="com.leaftaps.testcases.TC001_CreateLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
