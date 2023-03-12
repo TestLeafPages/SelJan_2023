@@ -1,0 +1,16 @@
+
+driver.executeScript("document.getElementById('username').value='demosalesmanager';");
+
+driver.executeScript("document.getElementById('enter your element id').click();");
+//or
+driver.executeScript("arguments[0].click();", loginButton);
+
+Scroll using Java Script:
+
+driver.executeScript("window.scrollBy(0,1000)"); // vertical scroll based on the pixel
+
+driver.executeScript("window.scrollBy(1000,0)"); // horizontal scroll based on the pixel
+
+driver.executeScript("arguments[0].scrollIntoView();", Element);
+
+driver.executeScript("window.scrollTo(0, document.body.scrollHeight)"); // vertical scroll to the end
