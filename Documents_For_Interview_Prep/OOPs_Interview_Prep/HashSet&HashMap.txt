@@ -1,0 +1,7 @@
+Explain about HashSet and HashMap
+	- When you like to store unique values (one dimensional) use HashSet like employee number
+	- When you like to store unique key-value pair (2-dim), use HashMap like employee number : employee name
+	- Both are classes implemented from Set, Map respectively.
+	- HashSet uses HashMap internally to store it's objects
+	-Whenever, I need to store relational objects like say: incident number -> associated status ( I use HashMap)
+	-It uses Hashing algorithm

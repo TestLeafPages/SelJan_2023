@@ -1,0 +1,16 @@
+What is polymorphism and give examples from your automation
+
+a) What it is? Polymorphism is Object oriented concept where single action can be transformed into multiple forms
+     Types: Overloading (compile-time) and Overriding (run-time)
+    	1) Overloading
+		a) Same method name with different arguments
+		b) Purpose: simplify verbose
+		c) Java examples: subString(int) // only start index and subString(int, int) // start and end
+		d) Selenium examples: switchTo().frame
+		e) Framework examples: locateElement(String) -> default by xpath, locateElement(String, String) -> by any locator
+	2) Overriding
+		a) Override the super class method behaviour at sub class level
+		b) Purpose: when like override the functionality
+		c) Java examples: equals method in String class overrides the Object class
+		d) Selenium examples: quit method in ChromiumDriver overrides the quit method in RWD
+		e) Framework examples: BeforeMethod in registration testcase override the BeforeMethod at hooks level (default: login)

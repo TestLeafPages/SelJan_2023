@@ -1,0 +1,19 @@
+What is abstraction and where are you using in your automation
+
+What it is? Abstraction is one of the OOPs concepts to  hide certain details and show only essential information to the user. 
+     Types: Interface, Abstract Class
+
+  1. Interface
+	Interfaces are design structure that directs what a class must do. It is placeholder for all abstract methods and it can also support concrete methods from 1.7 version with default to allow backward compatibility. In our project, we always start with interface so that everyone follow the common standards for developing methods and variables by which we can avoid ambiguity. 
+
+	
+	b) Java example: List, Set
+	c) Selenium example: SearchContext, WebDriver
+	d) Framework example: Browser , Element
+
+   2. Abstract Class
+	Contains both implemented and unimplemented (abstract) methods. Used to partially implement the interface.
+
+	a) Java example: AbstractList
+	b) Selenium example: By class
+	c) Framework example: Reporter

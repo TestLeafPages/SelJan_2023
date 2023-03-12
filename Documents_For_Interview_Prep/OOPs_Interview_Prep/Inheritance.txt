@@ -1,0 +1,10 @@
+What is inheritance and where are you using in your automation
+
+a) What it is? Inheritance is special Object oriented concept where a sub class inherit from the parent class (methods, fields). Can be applied to others like interface, annotation, enum as well.
+     Keyword: extends
+     Purpose: Reusability and maintenance
+     Types: Single, Multiple and Multi-Level
+b) Java example: ArrayList extends AbstractList (RuntimeException extends Exception)
+c) Selenium example: RemoteWebDriver -> ChromiumDriver -> ChromeDriver 
+		     Interface Inheritance: SearchContext -> WebDriver
+d) Framework example: BaseClass(ProjectSpecificMethods) -> Pages & Tests

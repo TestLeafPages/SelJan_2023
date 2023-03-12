@@ -1,0 +1,5 @@
+What is Interface and where are you using in your automation
+
+Interfaces are design structure that directs what a class must do. It is placeholder for all abstract methods and it can also support concrete methods from 1.7 version with default to allow backward compatibility. In our project, we always start with interface so that everyone follow the common standards for developing methods and variables by which we can avoid ambiguity. 
+
+In our framework, we designed the interfaces first like Browser, WebElement, WebSelect, WebButton etc first and then implemented using abstract or concrete class.
